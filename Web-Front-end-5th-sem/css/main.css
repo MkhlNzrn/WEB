@@ -1,0 +1,282 @@
+html{
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+body{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    height: 100%;
+}
+
+#wrap {
+    min-height: 86%;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+}
+
+.header-first-line{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.header-first-line__info{
+    width: 200px;
+}
+
+.header-second-line > ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    padding: 0;
+
+
+}
+
+.header-second-line > ul > li{
+    background-color: orange;
+    width: 100%;
+}
+
+.header-second-line > ul > li > a{
+    display: inline-block;
+    block-size: 100%;
+    width: 100%;
+    line-height: 45px;
+    vertical-align: top;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+.header-second-line > ul :hover{
+    background-color: brown;
+}
+
+.block-machine > ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.slider button{
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    opacity: 70%;
+}
+
+.slider-with-machine{
+    position: relative;
+}
+
+.slider-with-machine > ul{
+    display: flex;
+    flex-wrap: nowrap;
+    list-style: none;
+    justify-content: center;
+}
+
+.slider-with-machine > ul > li{
+    border: 1px solid black;
+    margin: 10px;
+}
+
+.slider-with-machine__left-button-position{
+    position: absolute;
+    top: 40%;
+    left: 7%;
+}
+
+.slider-with-machine__right-button-position{
+    position: absolute;
+    top: 40%;
+    right: 7%;
+}
+.slider-with-machine button{
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+
+.slider-with-machine__cards-machine > li{
+    background-color: #f7f7f7;
+}
+
+.slider-with-machine__cards-machine_info{
+    font-size: small;
+}
+
+.slider-with-machine__cards-machine_price{
+    font-weight: bolder;
+}
+
+.slider-with-machine > a{
+    display: block;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.block-advantages{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+.block-advantages__card{
+    width: 350px;
+}
+
+
+
+.slider-with-reviews__left-button-position{
+    position: absolute;
+    top: 40%;
+    left: 7%;
+}
+
+.slider-with-reviews__right-button-position{
+    position: absolute;
+    top: 40%;
+    right: 7%;
+}
+
+
+.block-reviews__list-cards{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    list-style: none;
+}
+
+.block-reviews__list-cards > li{
+    width: 20%;
+    margin: 1px 5px;
+}
+.block-reviews__list-cards > li > img{
+    object-fit: cover;
+}
+
+.block-partners__list-cards{
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+.block-partners__list-cards > li{
+    width: 10%;
+    border: 1px solid #E5E5E5;
+    min-width: 100px;
+    padding: 10px 15px;
+    margin: 5px 10px;
+}
+
+.block-partners__list-cards img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-width: 100px;
+}
+
+.block-faq__list{
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+footer{
+    display: flex;
+    justify-content: space-between;
+}
+
+.block-footer__third-column > ul{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.block-footer__third-column > li{
+    align-items: center;
+}
+
+.block-footer__social-networks{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    padding: 0;
+}
+
+.block-footer__social-networks  > li{
+    margin: 10px;
+}
+
+@media screen and (max-width: 1200px){
+    .slider-with-machine__cards-machine_width-normal{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 850px){
+    .block-footer__first-column{
+        display: none;
+    }
+    .block-partners__list-cards{
+        text-align: center;
+        justify-content: center;
+    }
+}
+
+.table-sales{
+    margin: 5px 20px;
+}
+
+table {
+    width: 1200px;
+    border-collapse: collapse;
+    border: saddlebrown solid 2px;
+}
+
+th{
+    background-color: #db8135;
+}
+
+th, td {
+    padding: 15px;
+    color: #fff;
+    text-align: center;
+}
+
+.old-price{
+    text-decoration: line-through;
+    text-decoration-color: red;
+}
+
+
+tr:nth-child(even) { background: #db8135; }
+tr:nth-child(odd) { background: #ffa34e }
+tr:hover td {background: #ffc781;}
+
+
+
+
+
+
+
+
